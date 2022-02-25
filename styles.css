@@ -7,6 +7,7 @@
 .dice {
   text-align: center;
   display: inline-block;
+  margin-bottom: 2rem;
 
 }
 
@@ -14,12 +15,20 @@ body {
   background-color: #E0DDAA;
 }
 
-h1 {
+h1{
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #203239;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #98B4AA;
+}
+
+h2 {
+  margin: 30px;
+  font-family: 'Lobster',serif;
+  text-shadow: 6px 0 #98B4AA;
+  font-size: 4rem;
+  color: #203239;
 }
 
 p {
@@ -29,7 +38,7 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 50%;
 }
 
 footer {
