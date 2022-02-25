@@ -1,10 +1,17 @@
 document.addEventListener("keydown", function(event) {
-  pressP(event.key)
+  pressOrTouch(event.key)
 });
 
-function pressP(key) {
+var touchArea= document.getElementsByTagName("body")[0];
+touchArea.addEventListener("click",function(event){
+  var wasTouched = true;
+  pressOrTouch(wasTouched);
 
-  if (key === "p") {
+});
+
+function pressOrTouch(key) {
+
+  if ((key === "p")|| (key === true)) {
 
     var randomNumber1 = Math.floor(Math.random() * 6 + 1);
     var randomNumber2 = Math.floor(Math.random() * 6 + 1);
@@ -28,9 +35,8 @@ function pressP(key) {
 }
 
 function restore() {
-
   setTimeout(function() {
     document.querySelector("h2").textContent = "Press [P] to Play!";
-  }, 2700);
+  }, 2000);
 
 }
